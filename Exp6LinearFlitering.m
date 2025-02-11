@@ -62,6 +62,9 @@ subplot(3,3,6);
 imshow(n7);
 title('Filtered Salt & Pepper Noise');
 
+%imshowpair(n6, n7,'montage');
+%title('paired image of filtered image and noise image');
+
 % Add Salt & Pepper noise with a specific density and apply median filter
 n10 = imnoise(m3, 'salt & pepper', 0.3);
 subplot(3,3,7);
